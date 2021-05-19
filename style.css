@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(239, 243, 253);
+  height: 100vh;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  margin-top: 100px;
+  font-family: Pangolin, sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  color: #115695;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 2px 5px black;
+}
+button {
+  margin-top: 70px;
+  cursor: pointer;
+  outline: none;
+  width: 600px;
+  height: 60px;
+  font-family: Pangolin, sans-serif;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  background: #f4dd4b;
+  color: #115695;
+  border: #f4dd4b;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px black;
+}
+
+button:hover {
+  background: #1d77cc;
+  color: #f4dd4b;
+  filter: brightness(95%);
+}
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+/* media query */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    width: 300px;
+    height: 60px;
+    font-family: Pangolin, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h1 {
+    font-family: Pangolin, sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #115695;
+    position: center;
+  }
+}
